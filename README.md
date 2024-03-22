@@ -1,4 +1,8 @@
 # A-survey-on-Mamba
+| 表头1 | 表头2 | 表头3 |
+| ------- | :----: | ------: |
+| 单元格1 | 单元格2 | 单元格3  |
+| 单元格4 | 单元格5 | 单元格6  |
 
 ## ☀️ Mamba
 - Linear-Time Sequence Modeling with Selective State Spaces <br>
