@@ -13,7 +13,7 @@
 | Total | 23 | \  |
 
 ## ☀️ Mamba
-- Linear-Time Sequence Modeling with Selective State Spaces <br>
+- **Linear-Time Sequence Modeling with Selective State Spaces** <br>
 📆 2023.12, Paper Link: [📄📄📄](https://arxiv.org/abs/2312.00752), Code：[✅✅✅](https://github.com/state-spaces/mamba) <br>
 📌 Notes：
 
