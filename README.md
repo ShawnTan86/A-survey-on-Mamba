@@ -1,6 +1,7 @@
 # A-survey-on-Mamba
 | Summary Table ||
 | Field | Number of Papers | Remarks |
+| Summary Table ||
 | ------- | :----: | ------: |
 | Improvements and Optimizations Based on Mamba | 6 | \ |
 | Vision Mamba | 2 | \  |
