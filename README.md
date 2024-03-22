@@ -1,8 +1,15 @@
 # A-survey-on-Mamba
-| 表头1 | 表头2 | 表头3 |
+| Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| 单元格1 | 单元格2 | 单元格3  |
-| 单元格4 | 单元格5 | 单元格6  |
+| Improvements and Optimizations Based on Mamba | 6 | \ |
+| Vision Mamba | 2 | \  |
+| Image Segmentation Based on Mamba | 9 | \  |
+| Image or Video Generation Based on Mamba | 1 | \  |
+| Image Dehazing Based on Mamba | 1 | \  |
+| Point Cloud Processing Based on Mamba | 1 | \  |
+| Graph Network Based on Mamba | 1 | \  |
+| Other Applications Based on Mamba | 2 | \  |
+| Total | 23 | \  |
 
 ## ☀️ Mamba
 - Linear-Time Sequence Modeling with Selective State Spaces <br>
