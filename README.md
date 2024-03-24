@@ -2,7 +2,7 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 6 | \ |
+| Improvements and Optimizations Based on Mamba | 7 | \ |
 | Vision Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 9 | \  |
 | Image or Video Generation Based on Mamba | 1 | \  |
@@ -10,7 +10,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 1 | \  |
 | Other Applications Based on Mamba | 2 | \  |
-| Total | 23 | \  |
+| Total | 24 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -47,6 +47,11 @@
 - 0️⃣6️⃣ **Can Mamba Learn How to Learn? A Comparative Study on In-Context Learning Tasks** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.04248), Code：❗️❗️❗️ <br>
 📖 Summary: 这篇论文介绍了一种新的连续序列到序列建模技术，名为层次化状态空间模型（HiSS），它通过在不同时间分辨率上堆叠结构化的状态空间模型来创建时间层次结构。HiSS在六个真实世界的传感器数据集上的表现超越了现有的最先进序列模型，如因果Transformer、LSTM、S4和Mamba，至少在均方误差（MSE）上提高了23%。此外，实验表明HiSS在小数据集上具有高效的扩展性，并且与现有的数据过滤技术兼容。论文还发布了CSP-Bench，这是一个公共的连续序列预测基准，包含六个真实世界标记数据集，旨在支持多样化的感官数据分析。<br>
+📌 Notes：
+
+- 0️⃣7️⃣ **Repeat After Me: Transformers are Better than State Space Models at Copying** <br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01032), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章比较了变换器（Transformers）和广义状态空间模型（Generalized State Space Models, GSSMs）在复制任务上的性能。研究表明，尽管GSSMs在推理时效率更高，但在需要从输入上下文中复制信息的任务上，变换器模型表现更佳。文章通过理论分析和实证实验，证明了变换器能够处理指数级长度的字符串复制，而GSSMs由于固定大小的潜在状态而受到限制。最后，文章通过预训练的大型语言模型评估，发现变换器在从上下文中复制和检索信息方面显著优于状态空间模型。<br>
 📌 Notes：
 
 ## ⭐️ Vision Mamba
