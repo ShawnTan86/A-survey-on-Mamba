@@ -2,7 +2,7 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 7 | \ |
+| Improvements and Optimizations Based on Mamba | 8| \ |
 | Vision Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 9 | \  |
 | Image or Video Generation Based on Mamba | 1 | \  |
@@ -10,7 +10,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 1 | \  |
 | Other Applications Based on Mamba | 2 | \  |
-| Total | 24 | \  |
+| Total | 25 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -52,7 +52,14 @@
 - 0️⃣7️⃣ **Repeat After Me: Transformers are Better than State Space Models at Copying** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01032), Code：❗️❗️❗️ <br>
 📖 Summary: 这篇文章比较了Transformers和广义状态空间模型（Generalized State Space Models, GSSMs）在复制任务上的性能。研究表明，尽管GSSMs在推理时效率更高，但在需要从输入上下文中复制信息的任务上，变换器模型表现更佳。文章通过理论分析和实证实验，证明了变换器能够处理指数级长度的字符串复制，而GSSMs由于固定大小的潜在状态而受到限制。最后，文章通过预训练的大型语言模型评估，发现变换器在从上下文中复制和检索信息方面显著优于状态空间模型。<br>
-📌 Notes：
+📌 Notes：Transformers和SSMs的对比
+
+- 0️⃣8️⃣ **The Hidden Attention of Mamba Models** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章探讨了Mamba模型中的隐式注意力机制，揭示了这种高效的选择性状态空间模型（SSM）如何通过内部的注意力机制与Transformer模型中的自注意力层相类似。研究表明，Mamba模型通过独特的数据控制线性操作符实现了隐式注意力，这为解释Mamba模型的内部工作机制提供了新的视角，并有助于开发用于解释性人工智能（Explainable Artificial Intelligence, XAI）的工具。文章还展示了Mamba模型在计算机视觉领域的注意力可视化和解释性评估，证明了其与Transformer模型相当的解释性能力。<br>
+📌 Notes：Mamba的可解释性分析
+
+
 
 ## ⭐️ Vision Mamba
 - 0️⃣1️⃣ **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model** <br>
