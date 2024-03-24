@@ -4,13 +4,15 @@
 | ------- | :----: | ------: |
 | Improvements and Optimizations Based on Mamba | 8| \ |
 | Vision Mamba | 2 | \  |
-| Image Segmentation Based on Mamba | 9 | \  |
-| Image or Video Generation Based on Mamba | 1 | \  |
+| Large Language Model Based on Mamba | 1 | \  |
+| Image Segmentation Based on Mamba | 11 | \  |
+| Target Detection Based on Mamba | 1 | \  |
+| Image or Video Generation Based on Mamba | 2 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 1 | \  |
 | Other Applications Based on Mamba | 2 | \  |
-| Total | 25 | \  |
+| Total | 30 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -21,7 +23,7 @@
 ## ⭐️ Improvements and Optimizations Based on Mamba
 - 0️⃣1️⃣ **MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts** <br>
 📆 2024.1, Paper Link: [📄📄📄](https://arxiv.org/abs/2401.04081), Code：❗️❗️❗️ <br>
-📖 Summary: 这篇论文介绍了MambaByte，这是一种无需标记的、基于状态空间模型（SSM）的字节级语言模型，它通过自回归方式训练于字节序列上。MambaByte直接使用字节作为序列的基本单元。MambaByte在多个数据集上展示了与其他字节级模型相比的优越性能，并与最先进的基于子词的Transformer模型竞争，同时在推理速度上由于其线性扩展特性而受益。研究表明，MambaByte是一种有效的无需标记的语言建模方法，为未来的大型模型提供了一种可行的无需标记的语言建模可能性。<br>
+📖 Summary: 这篇文章提出了MoE-Mamba，这是一个结合了Mamba状态空间模型（SSM）和专家混合（Mixture of Experts, MoE）机制的新型模型，旨在提高语言模型的扩展性和训练效率。MoE-Mamba在训练步骤上比原始的Mamba模型减少了2.35倍，同时保持了与Mamba相当的性能，特别是在处理长序列时。文章还探讨了不同的MoE集成方案，并对MoE-Mamba的不同设计选择、专家数量和模型大小进行了全面评估，证明了其在提高大型语言模型训练效率方面的潜力。<br>
 📌 Notes：
 
 - 0️⃣2️⃣ **MambaByte: Token-free Selective State Space Model** <br>
@@ -55,11 +57,9 @@
 📌 Notes：Transformers和SSMs的对比
 
 - 0️⃣8️⃣ **The Hidden Attention of Mamba Models** <br>
-📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：❗️❗️❗️ <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：[✅✅✅](https://github.com/AmeenAli/HiddenMambaAttn) <br>
 📖 Summary: 这篇文章探讨了Mamba模型中的隐式注意力机制，揭示了这种高效的选择性状态空间模型（SSM）如何通过内部的注意力机制与Transformer模型中的自注意力层相类似。研究表明，Mamba模型通过独特的数据控制线性操作符实现了隐式注意力，这为解释Mamba模型的内部工作机制提供了新的视角，并有助于开发用于解释性人工智能（Explainable Artificial Intelligence, XAI）的工具。文章还展示了Mamba模型在计算机视觉领域的注意力可视化和解释性评估，证明了其与Transformer模型相当的解释性能力。<br>
 📌 Notes：Mamba的可解释性分析
-
-
 
 ## ⭐️ Vision Mamba
 - 0️⃣1️⃣ **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model** <br>
@@ -70,6 +70,13 @@
 - 0️⃣2️⃣ **VMamba: Visual State Space Model** <br>
 📆 2024.1, Paper Link: [📄📄📄](https://arxiv.org/abs/2401.10166), Code：[✅✅✅](https://github.com/MzeroMiko/VMamba) <br>
 📖 Summary: 这篇论文提出了VMamba，一种新型的视觉状态空间模型（Visual State Space Model），它结合了全局感受野和动态权重，同时保持线性复杂度，以提高视觉表示学习的计算效率。VMamba使用应该CNN作为编码器，将图像转换为一维序列，然后使用应该Mamba模型作为解码器，将序列转换为所需的输出。为了解决视觉数据的方向敏感问题，论文引入了交叉扫描模块（Cross-Scan Module, CSM），以确保每个元素在特征图中整合来自不同方向的信息。实验结果表明，VMamba在图像分类、目标检测和语义分割等多种视觉任务上展现出了有希望的性能，并且在图像分辨率增加时，与现有基准相比显示出更明显的优势。<br>
+📌 Notes：
+
+
+## ⭐️ Large Language Model Based on Mamba
+- 0️⃣1️⃣ **ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.05795), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章介绍了ClinicalMamba，这是一个专门针对医疗领域设计的Mamba语言模型，它通过在大量纵向临床笔记上进行预训练，来解决医疗领域独特的语言特征和信息处理需求。ClinicalMamba模型在处理长文本时表现出色，与Mamba和临床Llama相比，它在少次学习情况下在速度和性能上都取得了显著的基准测试结果，超越了现有的临床语言模型和像GPT-4这样的大型语言模型。文章还讨论了ClinicalMamba在临床信息提取任务中的性能，特别是在队列选择和国际疾病分类（ICD）编码任务上，展示了其在处理长文本临床信息提取任务中的优越性。<br>
 📌 Notes：
 
 ## ⭐️ Image Segmentation Based on Mamba
@@ -118,10 +125,31 @@
 📖 Summary: 这篇论文提出了Weak-Mamba-UNet，一个用于医学图像分割的弱监督学习（WSL）框架，它结合了卷积神经网络（CNN）、视觉变换器（ViT）和最新的视觉Mamba（VMamba）架构，特别是针对基于涂鸦注释的数据。该框架的核心是一个协作和交叉监督机制，使用伪标签来促进网络间的迭代学习和精细化。在公开可用的MRI心脏分割数据集上进行的实验表明，Weak-Mamba-UNet在处理稀疏或不精确注释的情况下，其性能超过了仅使用UNet或SwinUNet的类似WSL框架。论文还提供了源代码的公开访问链接。<br>
 📌 Notes：
 
+- 1️⃣0️⃣ **Mamba-UNet: UNet-Like Pure Visual Mamba for Medical Image Segmentation** <br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.05079), Code：[✅✅✅](https://github.com/ziyangwang007/Mamba-UNet) <br>
+📖 Summary: 这篇文章介绍了Mamba-UNet，这是一种基于纯视觉Mamba（VMamba）块的UNet风格网络，用于医学图像分割。Mamba-UNet结合了U-Net的编码器-解码器结构和Mamba的长序列处理能力，通过跳连接保留了不同尺度的空间信息，以捕捉医学图像中的复杂细节和更广泛的语义上下文。实验结果表明，Mamba-UNet在公开的MRI心脏多结构分割数据集上的表现优于传统的U-Net和Swin-UNet。作者提供了源代码，并计划将来在不同的医学图像分割任务和半监督学习中进一步探索Mamba-UNet的应用。<br>
+📌 Notes：
+
+- 1️⃣1️⃣ **VM-UNET-V2: Rethinking Vision Mamba UNet for Medical Image Segmentation** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.09157), Code：[✅✅✅](https://github.com/nobodyplayer1/VM-UNetV2) <br>
+📖 Summary: 这篇文章介绍了一种名为VM-UNetV2的医学图像分割模型，该模型基于状态空间模型（SSM）和Vision Mamba UNet（VMamba）架构，旨在提高对长距离依赖的建模能力，同时保持线性计算复杂度。通过在多个公共数据集上的实验，VM-UNetV2展示了其在医学图像分割任务中的竞争力，特别是在处理胃肠病和皮肤病变图像时。此外，该研究还探讨了模型的不同配置和深度监督机制对分割性能的影响，并证明了VM-UNetV2在计算效率和准确性方面的优越性。<br>
+📌 Notes：直接基于VMamba的应用已经来了
+
+## ⭐️ Target Detection Based on Mamba
+- 0️⃣1️⃣ **MiM-ISTD: Mamba-in-Mamba for Efficient Infrared Small Target Detection** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.02148), Code：[✅✅✅](https://github.com/txchen-USTC/MiM-ISTD) <br>
+📖 Summary: 这篇文章提出了MIM-ISTD（Mamba-in-Mamba for Efficient Infrared Small Target Detection），这是一种结合了Mamba状态空间模型的红外小目标检测方法，旨在提高检测的效率和准确性。MIM-ISTD通过将图像分割成“视觉句子”和“视觉单词”，并使用外部和内部Mamba块来分别提取全局和局部特征，从而有效地处理了红外图像中的小目标检测任务。实验结果表明，与现有的最先进方法相比，MIM-ISTD在保持高准确性的同时，显著提高了计算速度，降低了GPU内存使用，特别是在处理高分辨率红外图像时。<br>
+📌 Notes：
+
 ## ⭐️ Image or Video Generation Based on Mamba
 - 0️⃣1️⃣ **Graph-Mamba: Towards Long-Range Graph Sequence Modeling with Selective State Spaces** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://browse.arxiv.org/pdf/2402.00789), Code：[✅✅✅](https://github.com/bowang-lab/Graph-Mamba) <br>
 📖 Summary: 这篇论文介绍了Graph-Mamba，这是一种新型图网络模型，它通过集成Mamba模块来增强图网络中的长距离上下文建模。Graph-Mamba利用选择性状态空间模型（SSM）来实现输入依赖的图稀疏化，并通过节点优先级和排列策略来提高预测性能。实验表明，Graph-Mamba在长距离图预测任务上超越了现有方法，并且在计算成本和GPU内存消耗方面都大幅减少。<br>
+📌 Notes：
+
+- 0️⃣2️⃣ **VideoMamba: State Space Model for Efficient Video Understanding** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.06977), Code：[✅✅✅](https://github.com/OpenGVLab/VideoMamba) <br>
+📖 Summary: 这篇文章介绍了VideoMamba，这是一个基于状态空间模型（SSM）的视频理解模型，专为高效处理视频内容而设计。VideoMamba通过其线性复杂度操作符，能够有效处理长视频序列，并且在短视频和长期视频理解任务中展现出优越性能。文章通过广泛的评估展示了VideoMamba在视觉领域的可扩展性、对短期动作识别的敏感性、在长期视频理解中的优越性以及与其他模态的兼容性，并通过开源代码和模型来促进未来的研究工作。<br>
 📌 Notes：
 
 ## ⭐️ Image Dehazing Based on Mamba
