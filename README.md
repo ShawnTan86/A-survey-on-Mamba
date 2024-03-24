@@ -51,7 +51,7 @@
 
 - 0️⃣7️⃣ **Repeat After Me: Transformers are Better than State Space Models at Copying** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01032), Code：❗️❗️❗️ <br>
-📖 Summary: 这篇文章比较了变换器（Transformers）和广义状态空间模型（Generalized State Space Models, GSSMs）在复制任务上的性能。研究表明，尽管GSSMs在推理时效率更高，但在需要从输入上下文中复制信息的任务上，变换器模型表现更佳。文章通过理论分析和实证实验，证明了变换器能够处理指数级长度的字符串复制，而GSSMs由于固定大小的潜在状态而受到限制。最后，文章通过预训练的大型语言模型评估，发现变换器在从上下文中复制和检索信息方面显著优于状态空间模型。<br>
+📖 Summary: 这篇文章比较了Transformers和广义状态空间模型（Generalized State Space Models, GSSMs）在复制任务上的性能。研究表明，尽管GSSMs在推理时效率更高，但在需要从输入上下文中复制信息的任务上，变换器模型表现更佳。文章通过理论分析和实证实验，证明了变换器能够处理指数级长度的字符串复制，而GSSMs由于固定大小的潜在状态而受到限制。最后，文章通过预训练的大型语言模型评估，发现变换器在从上下文中复制和检索信息方面显著优于状态空间模型。<br>
 📌 Notes：
 
 ## ⭐️ Vision Mamba
