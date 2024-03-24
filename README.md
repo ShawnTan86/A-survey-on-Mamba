@@ -4,7 +4,7 @@
 | ------- | :----: | ------: |
 | Improvements and Optimizations Based on Mamba | 8| \ |
 | Vision Mamba | 2 | \  |
-| Large Language Model Based on Mamba | 1 | \  |
+| Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
 | Target Detection Based on Mamba | 1 | \  |
 | Image or Video Generation Based on Mamba | 2 | \  |
@@ -12,7 +12,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 1 | \  |
 | Other Applications Based on Mamba | 2 | \  |
-| Total | 30 | \  |
+| Total | 31 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -77,6 +77,11 @@
 - 0️⃣1️⃣ **ClinicalMamba: A Generative Clinical Language Model on Longitudinal Clinical Notes** <br>
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.05795), Code：❗️❗️❗️ <br>
 📖 Summary: 这篇文章介绍了ClinicalMamba，这是一个专门针对医疗领域设计的Mamba语言模型，它通过在大量纵向临床笔记上进行预训练，来解决医疗领域独特的语言特征和信息处理需求。ClinicalMamba模型在处理长文本时表现出色，与Mamba和临床Llama相比，它在少次学习情况下在速度和性能上都取得了显著的基准测试结果，超越了现有的临床语言模型和像GPT-4这样的大型语言模型。文章还讨论了ClinicalMamba在临床信息提取任务中的性能，特别是在队列选择和国际疾病分类（ICD）编码任务上，展示了其在处理长文本临床信息提取任务中的优越性。<br>
+📌 Notes：
+
+- 0️⃣2️⃣ **Long-Context Language Modeling with Parallel Context Encoding** <br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.16617), Code：[✅✅✅](https://github.com/princeton-nlp/CEPE) <br>
+📖 Summary: 这篇文章介绍了一种名为Context Expansion with Parallel Encoding (CEPE)的框架，它通过添加小型编码器和交叉注意力模块来扩展大型语言模型（LLMs）的上下文窗口，从而有效处理更长的输入序列。CEPE在保持高效率和通用性的同时，通过在LLAMA-2模型上的应用展示了其在语言建模和上下文学习任务中的优秀性能，特别是在检索增强应用中，与其他长上下文模型相比，CEPE在检索增强语言建模和开放领域问答任务中表现出更好的性能。此外，文章还提出了CEPE的变体CEPE-DISTILLED (CEPED)，它可以通过未标记数据扩展指令调整模型的上下文窗口，进一步提高了长文本理解任务的性能。<br>
 📌 Notes：
 
 ## ⭐️ Image Segmentation Based on Mamba
