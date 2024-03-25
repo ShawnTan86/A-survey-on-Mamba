@@ -2,7 +2,7 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 8| \ |
+| Improvements and Optimizations Based on Mamba | 9 | \ |
 | Vision Mamba | 2 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
@@ -12,7 +12,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 1 | \  |
 | Other Applications Based on Mamba | 2 | \  |
-| Total | 31 | \  |
+| Total | 32 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -57,9 +57,14 @@
 📌 Notes：Transformers和SSMs的对比
 
 - 0️⃣8️⃣ **The Hidden Attention of Mamba Models** <br>
-📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：[✅✅✅](https://github.com/AmeenAli/HiddenMambaAttn) <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：[✅✅✅](https://github.com/Zyphra/BlackMamba) <br>
 📖 Summary: 这篇文章探讨了Mamba模型中的隐式注意力机制，揭示了这种高效的选择性状态空间模型（SSM）如何通过内部的注意力机制与Transformer模型中的自注意力层相类似。研究表明，Mamba模型通过独特的数据控制线性操作符实现了隐式注意力，这为解释Mamba模型的内部工作机制提供了新的视角，并有助于开发用于解释性人工智能（Explainable Artificial Intelligence, XAI）的工具。文章还展示了Mamba模型在计算机视觉领域的注意力可视化和解释性评估，证明了其与Transformer模型相当的解释性能力。<br>
 📌 Notes：Mamba的可解释性分析
+
+- 0️⃣9️⃣ **BlackMamba: Mixture of Experts for State-Space Models** <br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01771), Code：[✅✅✅](https://github.com/AmeenAli/HiddenMambaAttn) <br>
+📖 Summary: 这篇文章介绍了BlackMamba，这是一种新型的混合专家（Mixture of Experts, MoE）架构，结合了Mamba状态空间模型（SSM）以提高语言模型的性能。BlackMamba在保持线性时间和内存复杂度的同时，展示了与Mamba和Transformer基线模型相竞争的性能，并在推理和训练的浮点运算（FLOPs）上表现更优。文章还提到了BlackMamba模型的开源发布，包括340M/1.5B和630M/2.8B两个版本，以及在特定数据集上训练的结果。<br>
+📌 Notes
 
 ## ⭐️ Vision Mamba
 - 0️⃣1️⃣ **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model** <br>
