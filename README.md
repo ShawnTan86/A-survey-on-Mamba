@@ -10,9 +10,9 @@
 | Image or Video Generation Based on Mamba | 2 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
-| Graph Network Based on Mamba | 1 | \  |
-| Other Applications Based on Mamba | 2 | \  |
-| Total | 32 | \  |
+| Graph Network Based on Mamba | 2 | \  |
+| Other Applications Based on Mamba | 4 | \  |
+| Total | 35 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -176,8 +176,13 @@
 
 ## ⭐️ Graph Network Based on Mamba
 - 0️⃣1️⃣ **Graph Mamba: Towards Learning on Graphs with State Space Models** <br>
-📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.08678), Code：❗️❗️❗️ <br>
-📖 Summary: 这篇论文介绍了Graph Mamba Networks（GMNs），这是一种新的图神经网络（GNN）框架，基于状态空间模型（SSMs）来捕捉图数据中的长距离依赖关系。GMNs通过结合随机游走采样、双向选择性状态空间模型编码器、局部编码以及可选的结构/位置编码，提供了一种灵活、高效且可扩展的方法来处理图数据。实验结果表明，GMNs在处理长距离、小规模、大规模和异构图数据集上的基准测试中表现出色，同时在内存效率上超越了现有的图变换器（GTs）方法。<br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.00789), Code：[✅✅✅](https://github.com/bowang-lab/Graph-Mamba) <br>
+📖 Summary: 这篇文章提出了Graph-Mamba，这是一种新型的图网络模型，它通过将Mamba模块与输入依赖的节点选择机制相结合，来增强图网络中的长距离上下文建模。Graph-Mamba通过创新的图网络设计和状态空间模型（SSMs）的适应性改进，实现了对非序列图数据的高效处理。实验结果表明，Graph-Mamba在十个基准数据集上的长距离图预测任务中超越了现有方法，并且在计算成本（FLOPs）和GPU内存消耗方面都有显著减少，展现了其在大规模图数据上的高效性和优越性能。<br>
+📌 Notes：
+
+- 0️⃣2️⃣ **Graph-Mamba: Towards Long-Range Graph Sequence Modeling with Selective State Spaces** <br>
+📆 2024.2, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2402.12192), Code：[✅✅✅](https://github.com/bowang-lab/Graph-Mamba) <br>
+Summary: 这篇论文提出了Pan-Mamba，一个新颖的全景锐化网络（Pan-sharpening），它利用状态空间模型（特别是Mamba模型）的高效全局信息建模能力来进行图像融合。Pan-Mamba通过定制的通道交换Mamba和跨模态Mamba模块，实现了跨模态信息的有效交换和融合，从而在多个数据集上超越了现有的全景锐化方法。这是首次尝试将Mamba模型应用于全景锐化技术，为该领域建立了新的前沿，并提供了源代码供公众访问。<br>
 📌 Notes：
 
 ## ⭐️ Other Applications Based on Mamba
@@ -191,3 +196,12 @@
 Summary: 这篇论文提出了Pan-Mamba，一个新颖的全景锐化网络（Pan-sharpening），它利用状态空间模型（特别是Mamba模型）的高效全局信息建模能力来进行图像融合。Pan-Mamba通过定制的通道交换Mamba和跨模态Mamba模块，实现了跨模态信息的有效交换和融合，从而在多个数据集上超越了现有的全景锐化方法。这是首次尝试将Mamba模型应用于全景锐化技术，为该领域建立了新的前沿，并提供了源代码供公众访问。<br>
 📌 Notes：
 
+- 0️⃣3️⃣ **MambaTab: A Simple Yet Effective Approach for Handling Tabular Data** <br>
+📆 2024.1, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2401.08867), Code：❗️❗️❗️ <br>
+Summary: 这篇文章介绍了MambaTab，这是一个基于结构化状态空间模型（SSM）的创新方法，用于处理表格数据。MambaTab利用Mamba，一种新兴的SSM变体，实现了端到端的监督学习，相较于现有的深度学习模型，它在参数数量上显著减少，同时几乎不需要数据预处理。实验结果表明，MambaTab在多个公共数据集上的性能超越了当前最先进的方法，同时在特征增量学习设置下表现出色，证明了其作为一种轻量级、即插即用的表格数据解决方案的潜力。<br>
+📌 Notes：
+
+- 0️⃣4️⃣ **Mamba-ND: Selective State Space Modeling for Multi-Dimensional Data** <br>
+📆 2024.2, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2402.05892), Code：[✅✅✅](https://github.com/jacklishufan/Mamba-ND) <br>
+Summary: 这篇文章介绍了Mamba-ND，这是一种将Mamba架构扩展到多维数据的新型设计，通过在不同层之间交替数据的展开顺序来处理图像、视频和科学数据等多维输入。Mamba-ND在保持线性复杂度的同时，在多个基准数据集上展示了与最先进模型相媲美的性能，并显著减少了参数数量。文章通过广泛的实验比较了Mamba-ND与其他替代方案的效果，并提供了代码供公众使用。<br>
+📌 Notes：
