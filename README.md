@@ -72,7 +72,7 @@
 - 0️⃣8️⃣ **The Hidden Attention of Mamba Models** <br>
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.01590), Code：[✅✅✅](https://github.com/Zyphra/BlackMamba) <br>
 📖 Summary: 这篇文章探讨了Mamba模型中的隐式注意力机制，揭示了这种高效的选择性状态空间模型（SSM）如何通过内部的注意力机制与Transformer模型中的自注意力层相类似。研究表明，Mamba模型通过独特的数据控制线性操作符实现了隐式注意力，这为解释Mamba模型的内部工作机制提供了新的视角，并有助于开发用于解释性人工智能（Explainable Artificial Intelligence, XAI）的工具。文章还展示了Mamba模型在计算机视觉领域的注意力可视化和解释性评估，证明了其与Transformer模型相当的解释性能力。<br>
-📌 Notes：Mamba的可解释性分析
+📌 Notes：Mamba的可解释性（explainability）分析,将Mamba的S6 Layers进行处理简化为QKH，再和Transformer的QKV联系起来，提供了比较Mamba和Transformer两者performance, fairness, robustness, and weaknesses的方法。
 
 - 0️⃣9️⃣ **BlackMamba: Mixture of Experts for State-Space Models** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01771), Code：[✅✅✅](https://github.com/AmeenAli/HiddenMambaAttn) <br>
