@@ -19,6 +19,19 @@
 📆 2023.12, Paper Link: [📄📄📄](https://arxiv.org/abs/2312.00752), Code：[✅✅✅](https://github.com/state-spaces/mamba) <br>
 📌 Notes：
 
+- 0️⃣1️⃣ **Combining Recurrent, Convolutional, and Continuous-time Models with Linear State-Space Layers** <br>
+📆 NeurIPS 2021, Paper Link: [📄📄📄](https://proceedings.neurips.cc/paper_files/paper/2021/hash/05546b0e38ab9175cd905eebcc6ebb76-Abstract.html), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章介绍了一种新的序列模型——线性状态空间层（LSSL），它结合了循环神经网络（RNNs）、卷积神经网络（CNNs）和神经微分方程（NDEs）的特点，旨在提高时间序列数据建模的效率和性能。LSSL通过模拟连续时间状态空间表示来处理序列数据，能够处理长序列依赖关系，并且在多个时间序列基准测试中取得了最先进的结果。此外，文章还提出了一种结构化矩阵A的可训练子集，赋予LSSL长期记忆能力，并通过理论和实证分析展示了其在处理非常长序列方面的潜力。<br>
+📌 Notes：SSL（State-Space Layers）的首次提出
+
+- 0️⃣2️⃣ **Efficiently Modeling Long Sequences with Structured State Spaces** <br>
+📆 2021.11, Paper Link: [📄📄📄](https://arxiv.org/abs/2111.00396), Code：[✅✅✅](https://github.com/state-spaces/s4) <br>
+📖 Summary: 这篇文章提出了一种新的序列模型——Sequences with Structured State Space (S4)，它基于状态空间模型（SSM），通过引入低秩修正和稳定的对角化技术，显著提高了处理长序列数据的效率。S4模型在多个基准测试中取得了先进的性能，特别是在处理长范围依赖性（LRDs）任务时，与现有的Transformer模型相比，显示出更快的训练速度和更低的内存使用。此外，文章还展示了S4在一系列广泛的任务中的潜力，包括图像分类、语言建模和时间序列预测，证明了其作为通用序列模型的潜力。<br>
+📌 Notes：S4的首次提出，得到广泛关注的文章
+
+
+
+
 
 ## ⭐️ Improvements and Optimizations Based on Mamba
 - 0️⃣1️⃣ **MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts** <br>
