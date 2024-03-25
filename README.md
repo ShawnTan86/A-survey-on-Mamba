@@ -95,7 +95,7 @@
 📖 Summary: U-Mamba是一种新型的生物医学图像分割网络，它融合了CNN的局部特征提取和SSM的长距离依赖性建模能力，增强了图像的长距离依赖关系。该网络具有自适应不同数据集的自配置机制，无需手动调整。实验结果显示U-Mamba在多个生物医学图像分割任务上超越了现有的CNN和Transformer模型，展现了其作为一种高效、灵活的分割工具的潜力。<br>
 📌 Notes：
 
-- 0️⃣2️⃣ **Segmentation SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation** <br>
+- 0️⃣2️⃣ **SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation** <br>
 📆 2024.1, Paper Link: [📄📄📄](https://arxiv.org/abs/2401.13560), Code：[✅✅✅](https://github.com/ge-xing/SegMamba) <br>
 📖 Summary: 该论文介绍了SegMamba，这是一种基于Mamba的新型3D医学图像分割模型，旨在有效捕捉整个体积特征的长距离依赖关系。SegMamba通过设计三向Mamba（ToM）模块和门控空间卷积（GSC）模块，提高了对3D特征的序列建模能力，SegMamba可以有效的捕捉三维图形长距离依赖关系，并在保持高效率的同时，展示了在多个数据集上的优越性能。此外，作者还提出了一个新的大规模数据集CRC-500，用于3D结直肠癌分割研究，并通过实验验证了SegMamba与传统CNN和基于Transformer的方法相比，在建模体积数据中的长距离依赖关系方面具有显著的推理效率和有效性。<br>
 📌 Notes：
