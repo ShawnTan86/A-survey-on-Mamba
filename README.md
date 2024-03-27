@@ -2,17 +2,18 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 9 | \ |
+| Improvements and Optimizations Based on Mamba | 10 | \ |
 | Vision Mamba | 2 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
 | Target Detection Based on Mamba | 1 | \  |
+| Multi-modal model Based on Mamba | 1 | \  |
 | Image or Video Generation Based on Mamba | 2 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
 | Other Applications Based on Mamba | 4 | \  |
-| Total | 35 | \  |
+| Total | 37 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -76,11 +77,16 @@
 对于分类任务：在Pertubation Tests中，Mamba对于正向扰动的适应性优于Transformer，但负向扰动的适应性不如Transformer，这个值得思考。。。？（正向扰动：在这种设置下，研究者从输入图像中逐步移除像素，这些像素根据它们对模型预测的相关性从最高到最低排序。理想情况下，随着最相关的像素被移除，模型的准确率应该显著下降。）<br>
 对于分割任务：Mamba的pixel accuracy和mIoU高于Transformer，但mAP低于Transformer。
 
-
 - 0️⃣9️⃣ **BlackMamba: Mixture of Experts for State-Space Models** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.01771), Code：[✅✅✅](https://github.com/AmeenAli/HiddenMambaAttn) <br>
 📖 Summary: 这篇文章介绍了BlackMamba，这是一种新型的混合专家（Mixture of Experts, MoE）架构，结合了Mamba状态空间模型（SSM）以提高语言模型的性能。BlackMamba在保持线性时间和内存复杂度的同时，展示了与Mamba和Transformer基线模型相竞争的性能，并在推理和训练的浮点运算（FLOPs）上表现更优。文章还提到了BlackMamba模型的开源发布，包括340M/1.5B和630M/2.8B两个版本，以及在特定数据集上训练的结果。<br>
-📌 Notes
+📌 Notes：
+
+- 1️⃣0️⃣ **SiMBA: Simplified Mamba-based Architecture for Vision and Multivariate Time series** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.15360), Code：[✅✅✅](https://github.com/badripatro/Simba) <br>
+📖 Summary: 文章提出了一种名为SiMBA的新型架构，结合了Mamba状态空间模型（SSM）和EinFFT（爱因斯坦快速傅里叶变换）技术，用于视觉和多变量时间序列数据的处理。SiMBA通过EinFFT进行高效的通道建模，并利用Mamba块进行序列建模，解决了Mamba在大规模网络中的稳定性问题，并在多个基准测试中达到了最先进的性能。该架构在ImageNet和多个时间序列数据集上进行了广泛的性能研究，证明了其在处理长序列和图像识别任务中的有效性，并在一些任务上建立了新的最先进的性能标准。<br>
+📌 Notes：
+
 
 ## ⭐️ Vision Mamba
 - 0️⃣1️⃣ **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model** <br>
@@ -104,6 +110,7 @@
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.16617), Code：[✅✅✅](https://github.com/princeton-nlp/CEPE) <br>
 📖 Summary: 这篇文章介绍了一种名为Context Expansion with Parallel Encoding (CEPE)的框架，它通过添加小型编码器和交叉注意力模块来扩展大型语言模型（LLMs）的上下文窗口，从而有效处理更长的输入序列。CEPE在保持高效率和通用性的同时，通过在LLAMA-2模型上的应用展示了其在语言建模和上下文学习任务中的优秀性能，特别是在检索增强应用中，与其他长上下文模型相比，CEPE在检索增强语言建模和开放领域问答任务中表现出更好的性能。此外，文章还提出了CEPE的变体CEPE-DISTILLED (CEPED)，它可以通过未标记数据扩展指令调整模型的上下文窗口，进一步提高了长文本理解任务的性能。<br>
 📌 Notes：
+
 
 ## ⭐️ Image Segmentation Based on Mamba
 - 0️⃣1️⃣ **U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation** <br>
@@ -161,11 +168,20 @@
 📖 Summary: 这篇文章介绍了一种名为VM-UNetV2的医学图像分割模型，该模型基于状态空间模型（SSM）和Vision Mamba UNet（VMamba）架构，旨在提高对长距离依赖的建模能力，同时保持线性计算复杂度。通过在多个公共数据集上的实验，VM-UNetV2展示了其在医学图像分割任务中的竞争力，特别是在处理胃肠病和皮肤病变图像时。此外，该研究还探讨了模型的不同配置和深度监督机制对分割性能的影响，并证明了VM-UNetV2在计算效率和准确性方面的优越性。<br>
 📌 Notes：直接基于VMamba的应用已经来了
 
+
+## ⭐️ Multi-modal Model Based on Mamba
+- 0️⃣1️⃣ **ReMamber: Referring Image Segmentation with Mamba Twister** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.17839), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章提出了MIM-ISTD（Mamba-in-Mamba for Efficient Infrared Small Target Detection），这是一种结合了Mamba状态空间模型的红外小目标检测方法，旨在提高检测的效率和准确性。MIM-ISTD通过将图像分割成“视觉句子”和“视觉单词”，并使用外部和内部Mamba块来分别提取全局和局部特征，从而有效地处理了红外图像中的小目标检测任务。实验结果表明，与现有的最先进方法相比，MIM-ISTD在保持高准确性的同时，显著提高了计算速度，降低了GPU内存使用，特别是在处理高分辨率红外图像时。<br>
+📌 Notes：
+
+
 ## ⭐️ Target Detection Based on Mamba
 - 0️⃣1️⃣ **MiM-ISTD: Mamba-in-Mamba for Efficient Infrared Small Target Detection** <br>
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.02148), Code：[✅✅✅](https://github.com/txchen-USTC/MiM-ISTD) <br>
-📖 Summary: 这篇文章提出了MIM-ISTD（Mamba-in-Mamba for Efficient Infrared Small Target Detection），这是一种结合了Mamba状态空间模型的红外小目标检测方法，旨在提高检测的效率和准确性。MIM-ISTD通过将图像分割成“视觉句子”和“视觉单词”，并使用外部和内部Mamba块来分别提取全局和局部特征，从而有效地处理了红外图像中的小目标检测任务。实验结果表明，与现有的最先进方法相比，MIM-ISTD在保持高准确性的同时，显著提高了计算速度，降低了GPU内存使用，特别是在处理高分辨率红外图像时。<br>
+📖 Summary: 文章提出了一种名为ReMamber的新型Referring Image Segmentation (RIS) 架构，该架构通过整合Mamba模型和多模态Mamba Twister模块来处理图像和文本之间的交互，实现了高效的特征融合和图像分割。ReMamber通过独特的通道和空间扭曲机制，显式地建模图像-文本交互，并通过融合文本和视觉特征来提高分割精度，在三个具有挑战性的基准测试中达到了最先进的性能。研究还深入分析了ReMamber架构，并讨论了使用Mamba进行其他融合设计的可能性，为未来多模态理解领域的研究提供了宝贵的视角和方向。<br>
 📌 Notes：
+
 
 ## ⭐️ Image or Video Generation Based on Mamba
 - 0️⃣1️⃣ **Graph-Mamba: Towards Long-Range Graph Sequence Modeling with Selective State Spaces** <br>
@@ -178,17 +194,20 @@
 📖 Summary: 这篇文章介绍了VideoMamba，这是一个基于状态空间模型（SSM）的视频理解模型，专为高效处理视频内容而设计。VideoMamba通过其线性复杂度操作符，能够有效处理长视频序列，并且在短视频和长期视频理解任务中展现出优越性能。文章通过广泛的评估展示了VideoMamba在视觉领域的可扩展性、对短期动作识别的敏感性、在长期视频理解中的优越性以及与其他模态的兼容性，并通过开源代码和模型来促进未来的研究工作。<br>
 📌 Notes：
 
+
 ## ⭐️ Image Dehazing Based on Mamba
 - 0️⃣1️⃣ **U-shaped Vision Mamba for Single Image Dehazing** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.04139), Code：[✅✅✅](https://github.com/zzr-idam) <br>
 📖 Summary: 这篇论文提出了UVM-Net，一个基于U形网络结构的高效单图像去雾网络，它结合了卷积层的局部特征提取能力和状态空间序列模型（SSMs）捕获长距离依赖的能力。UVM-Net通过设计Bi-SSM模块来充分利用SSM的长距离建模能力，并且在多个公开数据集上的实验结果证明了其在图像去雾任务中的有效性。该方法为图像去雾以及其他图像恢复任务提供了一种高效的长距离依赖建模思路。<br>
 📌 Notes：
 
+
 ## ⭐️ Point Cloud Processing Based on Mamba
 - 0️⃣1️⃣ **PointMamba: A Simple State Space Model for Point Cloud Analysis** <br>
 📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.10739), Code：[✅✅✅](https://github.com/LMD0311/PointMamba) <br>
 📖 Summary: 这篇论文提出了PointMamba，一个用于点云分析的简单状态空间模型（SSM），它具有全局建模能力和线性复杂度。PointMamba通过嵌入点云块作为输入，并采用重排序策略来增强SSM的全局建模能力，通过提供更合理的几何扫描顺序。实验结果表明，PointMamba在不同的点云分析数据集上超越了基于Transformer的模型，同时显著减少了约44.3%的参数和25%的浮点运算（FLOPs），展示了在构建基础3D视觉模型方面的潜力。作者希望PointMamba能为点云分析提供新的视角，并已在GitHub上提供了代码。<br>
 📌 Notes：
+
 
 ## ⭐️ Graph Network Based on Mamba
 - 0️⃣1️⃣ **Graph Mamba: Towards Learning on Graphs with State Space Models** <br>
@@ -200,6 +219,7 @@
 📆 2024.2, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2402.12192), Code：[✅✅✅](https://github.com/bowang-lab/Graph-Mamba) <br>
 Summary: 这篇论文提出了Pan-Mamba，一个新颖的全景锐化网络（Pan-sharpening），它利用状态空间模型（特别是Mamba模型）的高效全局信息建模能力来进行图像融合。Pan-Mamba通过定制的通道交换Mamba和跨模态Mamba模块，实现了跨模态信息的有效交换和融合，从而在多个数据集上超越了现有的全景锐化方法。这是首次尝试将Mamba模型应用于全景锐化技术，为该领域建立了新的前沿，并提供了源代码供公众访问。<br>
 📌 Notes：
+
 
 ## ⭐️ Other Applications Based on Mamba
 - 0️⃣1️⃣ **FD-Vision Mamba for Endoscopic Exposure Correction** <br>
