@@ -9,11 +9,12 @@
 | Target Detection Based on Mamba | 1 | \  |
 | Multi-modal model Based on Mamba | 1 | \  |
 | Image or Video Generation Based on Mamba | 2 | \  |
+| Remote Sensing Images Based on Mamba Based on Mamba | 1 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
 | Other Applications Based on Mamba | 4 | \  |
-| Total | 37 | \  |
+| Total | 38 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -192,6 +193,13 @@
 - 0️⃣2️⃣ **VideoMamba: State Space Model for Efficient Video Understanding** <br>
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.06977), Code：[✅✅✅](https://github.com/OpenGVLab/VideoMamba) <br>
 📖 Summary: 这篇文章介绍了VideoMamba，这是一个基于状态空间模型（SSM）的视频理解模型，专为高效处理视频内容而设计。VideoMamba通过其线性复杂度操作符，能够有效处理长视频序列，并且在短视频和长期视频理解任务中展现出优越性能。文章通过广泛的评估展示了VideoMamba在视觉领域的可扩展性、对短期动作识别的敏感性、在长期视频理解中的优越性以及与其他模态的兼容性，并通过开源代码和模型来促进未来的研究工作。<br>
+📌 Notes：
+
+
+## ⭐️ Remote Sensing Images Based on Mamba
+- 0️⃣1️⃣ **RSMamba: Remote Sensing Image Classification with State Space Model** <br>
+📆 2024.2, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.04139), Code：[✅✅✅](https://github.com/KyanChen/RSMamba) <br>
+📖 Summary: 这篇论文介绍了一种名为RSMamba的新型架构，用于遥感图像分类。RSMamba基于状态空间模型（SSM），并通过动态多路径激活机制，有效整合了全局感受野和线性建模复杂度的优势，以提高对遥感场景的分类精度。通过在多个遥感图像分类数据集上的实验，RSMamba展现了超越现有基于CNN和Transformer的分类方法的性能，显示出作为未来视觉基础模型骨干网络的潜力。<br>
 📌 Notes：
 
 
