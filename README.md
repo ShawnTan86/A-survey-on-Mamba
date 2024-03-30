@@ -2,19 +2,19 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 10 | \ |
-| Vision Mamba | 2 | \  |
+| Improvements and Optimizations Based on Mamba | 12 | \ |
+| Vision Mamba | 3 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
 | Target Detection Based on Mamba | 1 | \  |
 | Multi-modal model Based on Mamba | 1 | \  |
-| Image or Video Generation Based on Mamba | 2 | \  |
+| Image or Video Generation Based on Mamba | 3 | \  |
 | Remote Sensing Images Based on Mamba Based on Mamba | 1 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
 | Other Applications Based on Mamba | 4 | \  |
-| Total | 38 | \  |
+| Total | 42 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -88,6 +88,16 @@
 📖 Summary: 文章提出了一种名为SiMBA的新型架构，结合了Mamba状态空间模型（SSM）和EinFFT（爱因斯坦快速傅里叶变换）技术，用于视觉和多变量时间序列数据的处理。SiMBA通过EinFFT进行高效的通道建模，并利用Mamba块进行序列建模，解决了Mamba在大规模网络中的稳定性问题，并在多个基准测试中达到了最先进的性能。该架构在ImageNet和多个时间序列数据集上进行了广泛的性能研究，证明了其在处理长序列和图像识别任务中的有效性，并在一些任务上建立了新的最先进的性能标准。<br>
 📌 Notes：
 
+- 1️⃣1️⃣ **VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.16536), Code：[✅✅✅](https://github.com/yyyujintang/VMRNN-PyTorch) <br>
+📖 Summary: 这篇文章提出了一种名为VMRNN的新型循环神经网络结构，它结合了视觉Mamba模块和长短期记忆（LSTM）网络，用于高效准确的时空预测任务。VMRNN通过整合视觉Mamba块的长序列建模能力和LSTM的时空动态捕捉能力，显著提升了在多种任务上的预测性能，同时保持了较小的模型规模。通过在多个数据集上的广泛评估，VMRNN在减少计算复杂性的同时，展现了与或超越现有最先进方法的预测准确性。<br>
+📌 Notes：
+
+- 1️⃣2️⃣ **STG-Mamba: Spatial-Temporal Graph Learning via Selective State Space Model** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.12418), Code：[✅✅✅](❗️❗️❗️) <br>
+📖 Summary: 本文提出了一种名为STG-Mamba的新型空间-时间图（STG）学习方法，该方法通过选择性状态空间模型（SSSM）来有效捕捉STG网络的动态演变。STG-Mamba采用编码器-解码器架构，并引入了图选择性状态空间块（GS3B）和卡尔曼滤波图神经网络（KFGN），以实现对STG数据的高效建模和预测。实验结果表明，STG-Mamba在多个基准STG预测数据集上不仅超越了现有最先进方法的性能，还显著降低了计算成本，展现了其在大规模STG学习任务中的潜力。<br>
+📌 Notes：
+
 
 ## ⭐️ Vision Mamba
 - 0️⃣1️⃣ **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model** <br>
@@ -98,6 +108,11 @@
 - 0️⃣2️⃣ **VMamba: Visual State Space Model** <br>
 📆 2024.1, Paper Link: [📄📄📄](https://arxiv.org/abs/2401.10166), Code：[✅✅✅](https://github.com/MzeroMiko/VMamba) <br>
 📖 Summary: 这篇论文提出了VMamba，一种新型的视觉状态空间模型（Visual State Space Model），它结合了全局感受野和动态权重，同时保持线性复杂度，以提高视觉表示学习的计算效率。VMamba使用应该CNN作为编码器，将图像转换为一维序列，然后使用应该Mamba模型作为解码器，将序列转换为所需的输出。为了解决视觉数据的方向敏感问题，论文引入了交叉扫描模块（Cross-Scan Module, CSM），以确保每个元素在特征图中整合来自不同方向的信息。实验结果表明，VMamba在图像分类、目标检测和语义分割等多种视觉任务上展现出了有希望的性能，并且在图像分辨率增加时，与现有基准相比显示出更明显的优势。<br>
+📌 Notes：
+
+- 0️⃣3️⃣ **EfficientVMamba: Atrous Selective Scan for Light Weight Visual Mamba** <br>
+📆 2024.1, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.09977), Code：[✅✅✅](https://github.com/TerryPei/EfficientVMamba) <br>
+📖 Summary: 本文介绍了一种名为EfficientVMamba的轻量级视觉模型，该模型通过结合视觉状态空间模型（SSM）和空洞选择性扫描（ES2D）方法，实现了高效的全局和局部特征提取。EfficientVMamba通过在网络的早期阶段使用SSM块捕获全局信息，并在后续阶段采用倒置残差块（Inverted Residual blocks）提取局部特征，有效地平衡了模型的计算复杂度和性能。实验结果表明，EfficientVMamba在保持较低计算成本的同时，在图像分类、目标检测和语义分割等多个视觉任务上取得了与现有轻量级模型相当或更好的性能。<br>
 📌 Notes：
 
 
@@ -193,6 +208,12 @@
 - 0️⃣2️⃣ **VideoMamba: State Space Model for Efficient Video Understanding** <br>
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.06977), Code：[✅✅✅](https://github.com/OpenGVLab/VideoMamba) <br>
 📖 Summary: 这篇文章介绍了VideoMamba，这是一个基于状态空间模型（SSM）的视频理解模型，专为高效处理视频内容而设计。VideoMamba通过其线性复杂度操作符，能够有效处理长视频序列，并且在短视频和长期视频理解任务中展现出优越性能。文章通过广泛的评估展示了VideoMamba在视觉领域的可扩展性、对短期动作识别的敏感性、在长期视频理解中的优越性以及与其他模态的兼容性，并通过开源代码和模型来促进未来的研究工作。<br>
+📌 Notes：
+
+- 0️⃣3️⃣ **MambaMIR: An Arbitrary-Masked Mamba for Joint Medical Image Reconstruction and Uncertainty Estimation
+** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.18451), Code：[✅✅✅](❗️❗️❗️) <br>
+📖 Summary: 本文提出了MambaMIR，一种基于Mamba模型的医学图像重建方法，以及其基于生成对抗网络（GAN）的变体MambaMIR-GAN，用于联合医学图像重建和不确定性估计。MambaMIR通过引入任意掩蔽机制，有效地适应了图像重建任务，并为后续的蒙特卡洛基于不确定性估计提供了随机性。实验结果表明，MambaMIR和MambaMIR-GAN在多种医学图像重建任务上，包括快速MRI和SVCT，达到了与现有最先进方法相当或更优的重建结果，并提供了估计的不确定性图，进一步洞察重建质量的可靠性。<br>
 📌 Notes：
 
 
