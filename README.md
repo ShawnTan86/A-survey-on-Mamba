@@ -2,7 +2,7 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 12 | \ |
+| Improvements and Optimizations Based on Mamba | 14 | \ |
 | Vision Mamba | 3 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
@@ -13,8 +13,8 @@
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
-| Other Applications Based on Mamba | 4 | \  |
-| Total | 42 | \  |
+| Other Applications Based on Mamba | 6 | \  |
+| Total | 46 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -94,8 +94,18 @@
 📌 Notes：
 
 - 1️⃣2️⃣ **STG-Mamba: Spatial-Temporal Graph Learning via Selective State Space Model** <br>
-📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.12418), Code：[✅✅✅](❗️❗️❗️) <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.12418), Code：❗️❗️❗️ <br>
 📖 Summary: 本文提出了一种名为STG-Mamba的新型空间-时间图（STG）学习方法，该方法通过选择性状态空间模型（SSSM）来有效捕捉STG网络的动态演变。STG-Mamba采用编码器-解码器架构，并引入了图选择性状态空间块（GS3B）和卡尔曼滤波图神经网络（KFGN），以实现对STG数据的高效建模和预测。实验结果表明，STG-Mamba在多个基准STG预测数据集上不仅超越了现有最先进方法的性能，还显著降低了计算成本，展现了其在大规模STG学习任务中的潜力。<br>
+📌 Notes：
+
+- 1️⃣3️⃣ **Theoretical Foundations of Deep Selective State-Space Models** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.19047), Code：❗️❗️❗️ <br>
+📖 Summary: 这篇文章探讨了深度选择性状态空间模型（Deep Selective State-Space Models）的理论基础，特别是如何通过引入简单的输入控制转换（selectivity mechanism）来增强模型的表达能力。文章使用粗糙路径理论（Rough Path Theory）的工具，证明了当随机线性递归（random linear recurrences）配备这种机制时，隐藏状态能够捕捉到输入在不同时间尺度上的非线性交互。此外，文章还提出了一个分析框架，用于理解和比较未来的SSM变体，并指出了这些模型在处理序列数据时的高效性和准确性。<br>
+📌 Notes：重点讨论selectivity mechanis的文章
+
+- 1️⃣4️⃣ **Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.03900), Code：[✅✅✅](https://github.com/chengkai-liu/Mamba4Rec) <br>
+📖 Summary: 这篇文章提出了Mamba4Rec，一个基于选择性状态空间模型（SSMs）的高效序列推荐系统，旨在解决Transformer模型在处理长序列时推理效率低下的问题。Mamba4Rec结合了Mamba模块和一系列序列建模技术，如位置嵌入、残差连接和层归一化，以提高模型性能并保持推理效率。实验结果表明，Mamba4Rec在两个公共数据集上的有效性和效率均超过了基于RNN和基于注意力的基线模型。<br>
 📌 Notes：
 
 
@@ -269,4 +279,14 @@ Summary: 这篇文章介绍了MambaTab，这是一个基于结构化状态空间
 - 0️⃣4️⃣ **Mamba-ND: Selective State Space Modeling for Multi-Dimensional Data** <br>
 📆 2024.2, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2402.05892), Code：[✅✅✅](https://github.com/jacklishufan/Mamba-ND) <br>
 Summary: 这篇文章介绍了Mamba-ND，这是一种将Mamba架构扩展到多维数据的新型设计，通过在不同层之间交替数据的展开顺序来处理图像、视频和科学数据等多维输入。Mamba-ND在保持线性复杂度的同时，在多个基准数据集上展示了与最先进模型相媲美的性能，并显著减少了参数数量。文章通过广泛的实验比较了Mamba-ND与其他替代方案的效果，并提供了代码供公众使用。<br>
+📌 Notes：
+
+- 0️⃣5️⃣ **Res-VMamba: Fine-Grained Food Category Visual Classification Using Selective State Space Models with Deep Residual Learning** <br>
+📆 2024.2, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2402.15761), Code：[✅✅✅](https://github.com/ChiShengChen/ResVMamba) <br>
+Summary: 这篇文章提出了一种名为Res-VMamba的模型，用于细粒度食品类别的视觉分类，该模型结合了深度残差学习和选择性状态空间模型。通过使用新的数据集CNFOOD-241，研究结果表明Res-VMamba在没有预训练权重的情况下达到了79.54%的分类准确率，超越了当前的最先进模型。文章还讨论了食品图像识别的挑战，并强调了使用统一大小图像的数据集对于提高模型性能的重要性。<br>
+📌 Notes：
+
+- 0️⃣6️⃣ **MambaTalk: Efficient Holistic Gesture Synthesis with Selective State Space Models** <br>
+📆 2024.3, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2403.09471), Code：❗️❗️❗️ <br>
+Summary: 这篇文章提出了MambaTalk，一个基于选择性状态空间模型（SSMs）的高效整体手势合成框架，通过结合离散运动先验和多模态集成来增强手势的多样性和节奏。MambaTalk通过两阶段建模策略，利用从VQ-VAE中提取的离散运动先验来解决直接应用选择性扫描机制导致的手势抖动问题，并通过多个Mamba模块来细化不同身体部位的潜在空间表示。实验表明，MambaTalk在BEATX标准数据集上的表现匹配或超过了当前最先进的模型，并且在训练速度上也显示出优越性。<br>
 📌 Notes：
