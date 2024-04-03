@@ -2,7 +2,7 @@
 📊 **Summary Table**
 | Field | Number of Papers | Remarks |
 | ------- | :----: | ------: |
-| Improvements and Optimizations Based on Mamba | 14 | \ |
+| Improvements and Optimizations Based on Mamba | 15 | \ |
 | Vision Mamba | 3 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
 | Image Segmentation Based on Mamba | 11 | \  |
@@ -14,7 +14,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
 | Other Applications Based on Mamba | 6 | \  |
-| Total | 46 | \  |
+| Total | 47 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -107,6 +107,11 @@
 📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.03900), Code：[✅✅✅](https://github.com/chengkai-liu/Mamba4Rec) <br>
 📖 Summary: 这篇文章提出了Mamba4Rec，一个基于选择性状态空间模型（SSMs）的高效序列推荐系统，旨在解决Transformer模型在处理长序列时推理效率低下的问题。Mamba4Rec结合了Mamba模块和一系列序列建模技术，如位置嵌入、残差连接和层归一化，以提高模型性能并保持推理效率。实验结果表明，Mamba4Rec在两个公共数据集上的有效性和效率均超过了基于RNN和基于注意力的基线模型。<br>
 📌 Notes：
+
+- 1️⃣5️⃣ **MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2403.19888), Code：[✅✅✅](https://mambamixer.github.io) <br>
+📖 Summary: 这篇文章介绍了MambaMixer，这是一种高效的选择性状态空间模型（SSM），它通过双重选择机制在标记（tokens）和通道（channels）上进行操作。MambaMixer通过选择性地混合和过滤信息，提高了长序列建模的性能，并在图像分类、目标检测、语义分割以及时间序列预测等任务中取得了与现有模型相媲美或更好的结果。此外，MambaMixer的设计允许模型直接访问早期特征，增强了信息流动，并通过数据依赖的权重提高了模型的泛化能力。<br>
+📌 Notes：很完善的模型
 
 
 ## ⭐️ Vision Mamba
