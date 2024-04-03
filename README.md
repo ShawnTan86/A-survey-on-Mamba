@@ -5,7 +5,7 @@
 | Improvements and Optimizations Based on Mamba | 15 | \ |
 | Vision Mamba | 3 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
-| Image Segmentation Based on Mamba | 12 | \  |
+| Image Segmentation Based on Mamba | 13 | \  |
 | Target Detection Based on Mamba | 1 | \  |
 | Multi-modal model Based on Mamba | 1 | \  |
 | Image or Video Generation Based on Mamba | 4 | \  |
@@ -14,7 +14,7 @@
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
 | Other Applications Based on Mamba | 7 | \  |
-| Total | 50 | \  |
+| Total | 51 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -202,6 +202,11 @@
 - 1️⃣2️⃣ **SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation** <br>
 📆 2024.4, Paper Link: [📄📄📄](https://arxiv.org/abs/2404.01065), Code：[✅✅✅](https://github.com/isbrycee/T-Mamba) <br>
 📖 Summary: 这篇文章提出了T-Mamba，一种用于三维锥形束计算机断层扫描（3D CBCT）图像中牙齿分割的深度学习模型，它通过集成共享位置编码和基于频率的特征到视觉状态空间模型（Vision Mamba）中来解决空间位置保持和频率域特征增强的局限性。T-Mamba是首个将基于频率的特征引入到视觉状态空间模型中的工作，它通过设计一个门控选择单元来适应性地整合空间域和频率域的特征。实验表明，T-Mamba在公开的牙齿CBCT数据集上取得了新的最先进结果，大幅超越了先前的最佳方法，例如IoU提高了3.63%，SO提高了2.43%，DSC提高了2.30%，HD降低了4.39mm，ASSD降低了0.37mm。<br>
+📌 Notes：
+
+- 1️⃣3️⃣ **Samba: Semantic Segmentation of Remotely Sensed Images with State Space Model** <br>
+📆 2024.4, Paper Link: [📄📄📄](https://arxiv.org/abs/2404.01705), Code：[✅✅✅](https://github.com/zhuqinfeng1999/Samba) <br>
+📖 Summary: 这篇文章介绍了Samba，一种基于Mamba的状态空间模型（SSM），专为高分辨率遥感图像的语义分割设计。Samba采用编码器-解码器架构，利用Samba块作为编码器进行高效的多级语义信息提取，并使用UperNet作为解码器。在LoveDA数据集上的评估显示，Samba在性能上超越了当前最先进的CNN和ViT方法，为基于Mamba的遥感图像分割技术设定了新的基准。文章的主要贡献包括提出Samba架构、展示Mamba在遥感图像分割中的潜力，并为未来工作提供了洞见和潜在方向。<br>
 📌 Notes：
 
 
