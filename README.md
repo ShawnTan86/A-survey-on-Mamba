@@ -31,8 +31,10 @@
 📖 Summary: 这篇文章提出了一种新的序列模型——Sequences with Structured State Space (S4)，它基于状态空间模型（SSM），通过引入低秩修正和稳定的对角化技术，显著提高了处理长序列数据的效率。S4模型在多个基准测试中取得了先进的性能，特别是在处理长范围依赖性（LRDs）任务时，与现有的Transformer模型相比，显示出更快的训练速度和更低的内存使用。此外，文章还展示了S4在一系列广泛的任务中的潜力，包括图像分类、语言建模和时间序列预测，证明了其作为通用序列模型的潜力。<br>
 📌 Notes：S4的首次提出，得到广泛关注的文章
 
-
-
+- 0️⃣3️⃣ **HiPPO: Recurrent Memory with Optimal Polynomial Projections** <br>
+📆 20220, Paper Link: [📄📄📄](https://proceedings.neurips.cc/paper/2020/hash/102f0bb6efb3a6128a3c750dd16729be-Abstract.html), Code：[✅✅✅](https://github.com/HazyResearch/hippo-code) <br>
+📖 Summary: 这篇文章介绍了HiPPO（High-order Polynomial Projection Operators）框架，这是一种用于在线压缩连续信号和离散时间序列的通用方法，通过将信号投影到多项式基上，并根据过去每个时间步的重要性来优化。HiPPO框架提供了一种理论上的优化解决方案，用于在线函数逼近问题，并且能够通过不同的度量方法来适应不同的时间尺度，从而避免了对时间尺度的先验假设。实验结果表明，HiPPO-LegS（一种特殊的HiPPO机制）在处理长期依赖关系的任务上，如排列MNIST数据集，达到了98.3%的准确率，并且在处理分布偏移和缺失数据的时序分类任务上，表现出比传统RNN和神经ODE基线更好的鲁棒性。<br>
+📌 Notes：HiPPO的首次提出
 
 
 ## ⭐️ Improvements and Optimizations Based on Mamba
