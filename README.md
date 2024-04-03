@@ -5,16 +5,16 @@
 | Improvements and Optimizations Based on Mamba | 15 | \ |
 | Vision Mamba | 3 | \  |
 | Large Language Model Based on Mamba | 2 | \  |
-| Image Segmentation Based on Mamba | 11 | \  |
+| Image Segmentation Based on Mamba | 12 | \  |
 | Target Detection Based on Mamba | 1 | \  |
 | Multi-modal model Based on Mamba | 1 | \  |
-| Image or Video Generation Based on Mamba | 3 | \  |
+| Image or Video Generation Based on Mamba | 4 | \  |
 | Remote Sensing Images Based on Mamba Based on Mamba | 1 | \  |
 | Image Dehazing Based on Mamba | 1 | \  |
 | Point Cloud Processing Based on Mamba | 1 | \  |
 | Graph Network Based on Mamba | 2 | \  |
-| Other Applications Based on Mamba | 6 | \  |
-| Total | 47 | \  |
+| Other Applications Based on Mamba | 7 | \  |
+| Total | 50 | \  |
 
 ## ☀️ Mamba
 - **Linear-Time Sequence Modeling with Selective State Spaces** <br>
@@ -199,6 +199,11 @@
 📖 Summary: 这篇文章介绍了一种名为VM-UNetV2的医学图像分割模型，该模型基于状态空间模型（SSM）和Vision Mamba UNet（VMamba）架构，旨在提高对长距离依赖的建模能力，同时保持线性计算复杂度。通过在多个公共数据集上的实验，VM-UNetV2展示了其在医学图像分割任务中的竞争力，特别是在处理胃肠病和皮肤病变图像时。此外，该研究还探讨了模型的不同配置和深度监督机制对分割性能的影响，并证明了VM-UNetV2在计算效率和准确性方面的优越性。<br>
 📌 Notes：直接基于VMamba的应用已经来了
 
+- 1️⃣2️⃣ **SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation** <br>
+📆 2024.4, Paper Link: [📄📄📄](https://arxiv.org/abs/2404.01065), Code：[✅✅✅](https://github.com/isbrycee/T-Mamba) <br>
+📖 Summary: 这篇文章提出了T-Mamba，一种用于三维锥形束计算机断层扫描（3D CBCT）图像中牙齿分割的深度学习模型，它通过集成共享位置编码和基于频率的特征到视觉状态空间模型（Vision Mamba）中来解决空间位置保持和频率域特征增强的局限性。T-Mamba是首个将基于频率的特征引入到视觉状态空间模型中的工作，它通过设计一个门控选择单元来适应性地整合空间域和频率域的特征。实验表明，T-Mamba在公开的牙齿CBCT数据集上取得了新的最先进结果，大幅超越了先前的最佳方法，例如IoU提高了3.63%，SO提高了2.43%，DSC提高了2.30%，HD降低了4.39mm，ASSD降低了0.37mm。<br>
+📌 Notes：
+
 
 ## ⭐️ Multi-modal Model Based on Mamba
 - 0️⃣1️⃣ **ReMamber: Referring Image Segmentation with Mamba Twister** <br>
@@ -225,11 +230,15 @@
 📖 Summary: 这篇文章介绍了VideoMamba，这是一个基于状态空间模型（SSM）的视频理解模型，专为高效处理视频内容而设计。VideoMamba通过其线性复杂度操作符，能够有效处理长视频序列，并且在短视频和长期视频理解任务中展现出优越性能。文章通过广泛的评估展示了VideoMamba在视觉领域的可扩展性、对短期动作识别的敏感性、在长期视频理解中的优越性以及与其他模态的兼容性，并通过开源代码和模型来促进未来的研究工作。<br>
 📌 Notes：
 
-- 0️⃣3️⃣ **MambaMIR: An Arbitrary-Masked Mamba for Joint Medical Image Reconstruction and Uncertainty Estimation
-** <br>
-📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.18451), Code：[✅✅✅](❗️❗️❗️) <br>
+- 0️⃣3️⃣ **MambaMIR: An Arbitrary-Masked Mamba for Joint Medical Image Reconstruction and Uncertainty Estimation** <br>
+📆 2024.3, Paper Link: [📄📄📄](https://arxiv.org/abs/2402.18451), Code：❗️❗️❗️<br>
 📖 Summary: 本文提出了MambaMIR，一种基于Mamba模型的医学图像重建方法，以及其基于生成对抗网络（GAN）的变体MambaMIR-GAN，用于联合医学图像重建和不确定性估计。MambaMIR通过引入任意掩蔽机制，有效地适应了图像重建任务，并为后续的蒙特卡洛基于不确定性估计提供了随机性。实验结果表明，MambaMIR和MambaMIR-GAN在多种医学图像重建任务上，包括快速MRI和SVCT，达到了与现有最先进方法相当或更优的重建结果，并提供了估计的不确定性图，进一步洞察重建质量的可靠性。<br>
 📌 Notes：
+
+- 0️⃣4️⃣ **SpikeMba: Multi-Modal Spiking Saliency Mamba for Temporal Video Grounding** <br>
+📆 2024.4, Paper Link: [📄📄📄](https://arxiv.org/abs/2404.01174), Code：❗️❗️❗️<br>
+📖 Summary: 这篇文章介绍了SpikeMba，一种用于视频内容理解中的时间视频定位（Temporal Video Grounding, TVG）的多模态脉冲神经网络（Spiking Neural Networks, SNNs）和状态空间模型（State Space Models, SSMs）的集成方法。SpikeMba通过引入相关的槽（slots）来增强模型的记忆力，并利用脉冲显著性检测器来准确定位视频中的显著时刻。实验表明，SpikeMba在主流基准测试中持续超越了最先进的方法。<br>
+📌 Notes：视频理解模型
 
 
 ## ⭐️ Remote Sensing Images Based on Mamba
@@ -294,4 +303,9 @@ Summary: 这篇文章提出了一种名为Res-VMamba的模型，用于细粒度�
 - 0️⃣6️⃣ **MambaTalk: Efficient Holistic Gesture Synthesis with Selective State Space Models** <br>
 📆 2024.3, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2403.09471), Code：❗️❗️❗️ <br>
 Summary: 这篇文章提出了MambaTalk，一个基于选择性状态空间模型（SSMs）的高效整体手势合成框架，通过结合离散运动先验和多模态集成来增强手势的多样性和节奏。MambaTalk通过两阶段建模策略，利用从VQ-VAE中提取的离散运动先验来解决直接应用选择性扫描机制导致的手势抖动问题，并通过多个Mamba模块来细化不同身体部位的潜在空间表示。实验表明，MambaTalk在BEATX标准数据集上的表现匹配或超过了当前最先进的模型，并且在训练速度上也显示出优越性。<br>
+📌 Notes：
+
+- 0️⃣7️⃣ **HARMamba: Efficient Wearable Sensor Human Activity Recognition Based on Bidirectional Selective SSM** <br>
+📆 2024.3, 📖 Summary: [📄📄📄](https://arxiv.org/abs/2403.20183), Code：❗️❗️❗️ <br>
+Summary: 这篇文章提出了HARMamba，一个基于双向选择性状态空间模型（SSM）的轻量级可穿戴传感器人体活动识别（HAR）框架，旨在解决实时活动识别场景中的计算资源限制问题。HARMamba通过将传感器数据分割成“patches”并独立学习每个通道，同时使用位置嵌入作为输入标记，通过分类头实现活动分类，与基于Transformer的模型相比，HARMamba在减少计算和内存开销的同时，实现了更优的性能。此外，HARMamba在四个公共活动数据集上进行了广泛的测试，包括PAMAP2、WISDM、UNIMIB和UCI，证明了其在活动识别任务中的卓越性能。<br>
 📌 Notes：
